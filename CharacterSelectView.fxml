@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="682.0" prefWidth="844.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="characterSelectController">
+   <children>
+      <HBox alignment="CENTER" layoutY="68.0" prefHeight="552.0" prefWidth="896.0" spacing="20.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fx:id="blue" fitHeight="350.0" fitWidth="200.0" onMouseClicked="#blueSelection" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Blue/Blue_Leader.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="green" fitHeight="350.0" fitWidth="200.0" onMouseClicked="#greenSelection" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Green/Green_Leader.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="red" fitHeight="350.0" fitWidth="200.0" onMouseClicked="#redSelection" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Boss/Boss_Leader.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="black" fitHeight="350.0" fitWidth="200.0" onMouseClicked="#blackSelection" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Black/Black_Leader.jpg" />
+               </image></ImageView>
+
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="126.0" layoutY="108.0" prefHeight="108.0" prefWidth="649.0">
+         <children>
+            <Label prefHeight="62.0" prefWidth="249.0" text="Deck Selection" textAlignment="CENTER" textFill="#f5f2f2">
+               <font>
+                  <Font name="Brush Script MT Italic" size="52.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="13.0" layoutY="543.0" prefHeight="32.0" prefWidth="872.0" spacing="130.0">
+         <children>
+            <Label fx:id="blueLabel" alignment="CENTER" prefHeight="27.0" prefWidth="167.0" text="   Northern Realms" textFill="#0f66db">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="greenLabel" alignment="CENTER" prefHeight="27.0" prefWidth="89.0" text="Scoia'tael" textFill="#8ee121">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="redLabel" alignment="CENTER" prefHeight="27.0" prefWidth="81.0" text="Monster" textFill="#f30707">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="blackLabel" alignment="CENTER" prefHeight="27.0" prefWidth="119.0" text="Nilfgaardian" textFill="#f0af09">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="startButton" contentDisplay="CENTER" layoutX="395.0" layoutY="613.0" mnemonicParsing="false" onAction="#startGame" prefHeight="43.0" prefWidth="111.0" text="START GAME">
+         <font>
+            <Font name="Candara Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="selectLabel" alignment="CENTER" layoutX="6.0" layoutY="14.0" prefHeight="43.0" prefWidth="309.0" textAlignment="CENTER" textFill="#fefcfc">
+         <font>
+            <Font name="Candara Bold Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
